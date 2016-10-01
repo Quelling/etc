@@ -1,0 +1,10 @@
+feh --bg-scale back.jpg
+bash compton.sh
+xrdb -merge .Xresources
+setxkbmap -layout 'us,ru' -option 'grp:ctrl_shift_toggle'
+xset m 0 0
+xmodmap xmodmapP
+xset s off
+set s off -dpms
+firefox &
+pavucontrol &

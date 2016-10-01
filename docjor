@@ -1,0 +1,52 @@
+vlc zvuk otkluchaetsya
+pactl unload-module module-role-cork 
+
+poisk po vsemu katalogu i katalogam vnutri
+grep -r word * 
+
+PlayOnLinux:
+dlâ h32 vajna
+lib32-libpulse
+
+Steam rust
+export LANG=en_US.UTF-8 && steam 
+Steam wine
+env WINEPREFIX=/home/john/.wineprefix/steam/ wine ~/.wineprefix/steam/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe
+env WINEPREFIX=~/.wineprefix/steam/ wine ~/.wineprefix/steam/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe
+
+finč zvuk i kopipasta
+xdg-utils
+gst-plugins-good gst-plugns-base-libs
+purple-hangouts-hg purple-skypeweb-git purple-vk-plugin pidgin-opensteamworks
+
+watch - interaktivno obnovlâet terminal
+
+vyklûčit' otklûčenie èkrana
+set s off -dpms
+
+vremâ sinhronizaciâ
+sudo systemctl enable ntp
+
+//kdžek sitièl' i pavukontrol terminal'nu
+njconnect 
+pulsemixer-git
+
+lm_sensors nužno zapuskat' dlâ otobroženiâ datčikov
+
+toxic prozračnost' v konfige ~/.config/tox/toxic.conf
+ui = {
+  5   // true to enable timestamps, false to disable
+  6   timestamps=true;
+  7 
+  8   // true to enable terminal alerts on messages, false to disable
+  9   alerts=true;
+ 10 
+ 11   // true to use native terminal colours, false to use toxic default colour theme
+ 12   native_colors=true;
+ 13 
+ 14 
+ 15 };
+toxic pochinka
+sudo ln -s /usr/lib/libvpx.so.4 /usr/lib/libvpx.so.3
+sudo ln -s /usr/lib/libvpx.so.4.0 /usr/lib/libvpx.so.3.0
+sudo ln -s /usr/lib/libvpx.so.4.0.0 /usr/lib/libvpx.so.3.0.0
