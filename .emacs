@@ -1,12 +1,12 @@
+(add-to-list 'load-path "~/.emacs.d/elpa/multiple-cursors-20160719.216")
 (setq backup-directory-alist `(("." . "~/.emacs.d/backup"))) ;perenos backupov
-;;;;;;;;;;;;;;;
+(setq redisplay-dont-pause t)  ;; лучшая отрисовка буфера
+(setq ring-bell-function 'ignore) ;; отключить звуковой сигнал;
 (delete-selection-mode t)
 ;; Disable GUI components
 (tooltip-mode      -1)
 (menu-bar-mode     -1) ;; отключаем графическое меню
 (tool-bar-mode     -1) ;; отключаем tool-bar
-(setq redisplay-dont-pause t)  ;; лучшая отрисовка буфера
-(setq ring-bell-function 'ignore) ;; отключить звуковой сигнал;
 (require 'font-lock) ; highlight
 (setq font-lock-maximum-decoration t)
 ;; otstupi
@@ -16,23 +16,54 @@
 (setq-default lisp-body-indent   4) ;; сдвигать Lisp-выражения на 4 пробельных символа
 (global-set-key (kbd "RET") 'newline-and-indent) ;; при нажатии Enter перевести каретку и сделать отступ
 (setq lisp-indent-function  'common-lisp-indent-function)
-
 (setq search-highlight        t)
 (setq query-replace-highlight t)
-
-										; CEDET settings
 (require 'cedet)
+(require 'ede/generic)
+(require 'semantic/ia)
+(require 'hippie-exp)
+(require 'package)
+(require 'multiple-cursors)
+(package-initialize)
+(global-undo-tree-mode)
+undo-tree-visualizer-diff
+undo-tree-visualizer-timestamps
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(setq show-paren-delay 0)		;zaderzhka mezhdu podsvetkoy skobok
+(show-paren-mode t)			;sami skobki
+(global-linum-mode t)			;numering line
+(setq linum-format "%4d \u2502 ")
+(global-semanticdb-minor-mode 1) 
+(require 'flymake)
+(semantic-mode   t)
+(global-ede-mode t)									   
+(ede-enable-generic-projects)
+
+(global-set-key (kbd "<C-up>") 'shrink-window)
+(global-set-key (kbd "<C-down>") 'enlarge-window)
+(global-set-key (kbd "<C-right>") 'shrink-window-horizontally)
+(global-set-key (kbd "<C-left>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-c k") 'mc/edit-lines)
+(global-set-key (kbd "C-c /") 'mc/mark-pop)
+(global-set-key (kbd "C-c l") 'mc/mark-next-word-like-this)
+(global-set-key (kbd "C-c ;") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c '") 'mc/mark-all-like-this)
+
+(add-hook 'java-mode-hook 'flymake-mode-on)
+(defun my-java-flymake-init ()
+	(list "javac" (list (flymake-init-create-temp-buffer-copy
+						 'flymake-create-temp-with-folder-structure))))
+(add-to-list 'flymake-allowed-file-name-masks '("\\.java$" my-java-flymake-init flymake-simple-cleanup))
+
+;cedet
 (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
 ;;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode)
-(semantic-mode   t)
-(global-ede-mode t)
-(require 'ede/generic)
-(require 'semantic/ia)
-(ede-enable-generic-projects)
+
+;; end
 
 (defun ac-init()
 	(require 'auto-complete-config)
@@ -47,37 +78,14 @@
 	   (add-to-list 'ac-sources 'ac-source-dictionary) ;; в той папке где редактируемый буфер
 	   (add-to-list 'ac-sources 'ac-source-words-in-all-buffer) ;; по всему буферу
 	   (add-to-list 'ac-sources 'ac-source-files-in-current-dir))
+;       (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20160827.649/dict"))
+
 ;; SLIME settings
 (defun run-slime()
 	(require 'slime)
 	(require 'slime-autoloads)
 	(setq slime-net-coding-system 'utf-8-unix)
 	(slime-setup '(slime-fancy slime-asdf slime-indentation))) ;; загрузить основные дополнения Slime
-
-(global-set-key (kbd "<C-up>") 'shrink-window)
-(global-set-key (kbd "<C-down>") 'enlarge-window)
-(global-set-key (kbd "<C-right>") 'shrink-window-horizontally)
-(global-set-key (kbd "<C-left>") 'enlarge-window-horizontally)
-(global-set-key (kbd "C-c k") 'mc/edit-lines)
-(global-set-key (kbd "C-c /") 'mc/mark-pop)
-(global-set-key (kbd "C-c l") 'mc/mark-next-word-like-this)
-(global-set-key (kbd "C-c ;") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c '") 'mc/mark-all-like-this)
-
-(package-initialize)
-
-(global-undo-tree-mode)
-undo-tree-visualizer-diff
-undo-tree-visualizer-timestamps
-
-(require 'package)
-(require 'multiple-cursors)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-
-(setq show-paren-delay 0)		;zaderzhka mezhdu podsvetkoy skobok
-(show-paren-mode t)			;sami skobki
-(global-linum-mode t)			;numering line
-(setq linum-format "%4d \u2502 ")
 
 ;(require 'color-theme)
 ;;(eval-after-load "color-theme"
