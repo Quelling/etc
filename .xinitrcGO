@@ -8,3 +8,5 @@ xset s off
 set s off -dpms
 firefox &
 pavucontrol &
+urxvt -e toxic &
+urxvt -e finch &
