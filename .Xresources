@@ -1,0 +1,90 @@
+Xcursor.theme: handhelds
+
+!URxvt*background : #000000
+URxvt*foreground : #ffffff
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+
+URxvt*background:           rgba:0000/0000/0000/9fff
+URxvt*depth: 32
+!URxvt.shading:       50
+
+URxvt*cursorColor: #e1d8e0
+URxvt*colorIT : #e1d8e0
+URxvt*colorBD : #e1d8e0
+!URxvt.inheritPixmap: true
+!URxvt.transparent:   true
+
+URxvt.scrollBar: false
+!-- Xft settings VO VSEI SYSTEME-- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+!URxvt.perl-ext-common: tabbed
+
+! -- Fonts -- !
+URxvt.font:xft:Terminus:pixelsize=14:antialias=true
+URxvt.boldfont:xft:Terminus:style=Bold:pixesize=14
+URxvt*iso14755: False
+URxvt.letterSpace: 0
+
+
+! -- Colour -- !
+! In () old colour
+! black,(green) white
+URxvt.color0  : #000000
+URxvt.color8  : #e1d8e0
+! red high, red dark
+URxvt.color1  : #ff6b6b
+URxvt.color9  : #cf6767
+! (green, gReen) whiteX2
+URxvt.color2  : #e1d8e0
+URxvt.color10 : #e1d8e0
+! dark orangeYELLOW? yellow
+URxvt.color3  : #aa5500
+URxvt.color11 : #FFFF55
+! (green) teal  white
+URxvt.color4  : #11a889
+URxvt.color12 : #e1d8e0 
+! magenta dark, light
+URxvt.color5  : #ff9bff
+URxvt.color13 : #ffbeff
+! cyan dark, light
+URxvt.color6  : #00AAAA
+URxvt.color14 : #55FFFF
+! yellow, white
+URxvt.color7  : #fffbae
+URxvt.color15 : #FFFFFF
+
+*color0  : #000000
+*color8  : #e1d8e0
+! red high, red dark
+*color1  : #ff6b6b
+*color9  : #cf6767
+! (green, gReen) whiteX2
+*color2  : #e1d8e0
+*color10 : #e1d8e0
+! dark orangeYELLOW? yellow
+*color3  : #aa5500
+*color11 : #FFFF55
+! (green) teal  white
+*color4  : #11a889
+*color12 : #e1d8e0 
+! magenta dark, light
+*color5  : #ff9bff
+*color13 : #ffbeff
+! cyan dark, light
+*color6  : #00AAAA
+*color14 : #55FFFF
+! yellow, white
+*color7  : #fffbae
+*color15 : #FFFFFF
+
+

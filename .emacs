@@ -2,6 +2,8 @@
 (setq backup-directory-alist `(("." . "~/.emacs.d/backup"))) ;perenos backupov
 (setq redisplay-dont-pause t)  ;; лучшая отрисовка буфера
 (setq ring-bell-function 'ignore) ;; отключить звуковой сигнал;
+(setq x-select-enable-clipboard t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 (delete-selection-mode t)
 ;; Disable GUI components
 (tooltip-mode      -1)

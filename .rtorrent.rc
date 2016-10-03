@@ -1,0 +1,18 @@
+directory = ~/rtorrent 
+# Директория куда будут скачиваться Ваши файлы (пробелы экранируются символом «\», символ «~» в начале пути интерпретируется как путь к домашней папке)
+session = ~/session/
+# Эта директория, в которую будут размещаться открытые закачки. Можете оставить это поле пустым,
+dht.mode.set = on
+dht_port = 6881
+port_range = 50000-50000
+port_random = no
+protocol.pex.set = yes
+use_udp_trackers = yes
+check_hash = yes
+upload_rate = 99999
+download_rate = 99999
+# Проверять hash файла по окончании закачки
+session_save = yes
+# Сохранять сессию
+encoding_list = UTF-8;CP1251;KOI8-R
+schedule = watch_directory,10,10,load_start=~/Downloads/*.torrent
