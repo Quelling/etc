@@ -1,3 +1,7 @@
+nvidiattyblackscreen
+/etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+
 vlc zvuk otkluchaetsya
 pactl unload-module module-role-cork 
 
