@@ -61,7 +61,6 @@ undo-tree-visualizer-timestamps
 (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
-;;(add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-show-parser-state-mode)
 
@@ -80,7 +79,6 @@ undo-tree-visualizer-timestamps
 	   (add-to-list 'ac-sources 'ac-source-dictionary) ;; в той папке где редактируемый буфер
 	   (add-to-list 'ac-sources 'ac-source-words-in-all-buffer) ;; по всему буферу
 	   (add-to-list 'ac-sources 'ac-source-files-in-current-dir))
-;       (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20160827.649/dict"))
 
 ;; SLIME settings
 (defun run-slime()
@@ -89,16 +87,8 @@ undo-tree-visualizer-timestamps
 	(setq slime-net-coding-system 'utf-8-unix)
 	(slime-setup '(slime-fancy slime-asdf slime-indentation))) ;; загрузить основные дополнения Slime
 
-;(require 'color-theme)
-;;(eval-after-load "color-theme"
-;;                   '(progn
-;;                           (color-theme-initialize)
-;;                                (color-theme-arjen)))
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
@@ -108,8 +98,5 @@ undo-tree-visualizer-timestamps
 	(undo-tree auto-complete auto-complete-nxml multiple-cursors list-packages-ext xresources-theme cyberpunk-theme autumn-light-theme ample-zen-theme ample-theme alect-themes ahungry-theme abyss-theme)))
  '(xterm-mouse-mode t))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+
  )
