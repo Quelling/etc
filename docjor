@@ -1,9 +1,9 @@
 usermod -a -G audio theusername
-sudo addgroup <username> audio
+sudo addgroup <username> audio ; odno i tozhe chto i pervoe, vrode kak
 export WINEPREFIX=~/.wineprefix/g2
 wine64 regsvr32 wineasio.dll
 regsvr32 wineasio.dll
-'install gr5 from fuseiso'
+; install gr5 from fuseiso
 wine /home/john/.wineprefix/g2/drive_c/Program\ Files/Native\ Instruments/Guitar\ Rig\ 5/Guitar\ Rig\ 5.exe
 
 xboxdrv for dark souls wine
