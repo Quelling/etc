@@ -1,16 +1,19 @@
 usermod -a -G audio theusername
-sudo addgroup <username> audio ; odno i tozhe chto i pervoe, vrode kak
+sudo addgroup <username> audio	;odno i to zhe chto i pervoe, vrode kak
 export WINEPREFIX=~/.wineprefix/g2
 wine64 regsvr32 wineasio.dll
 regsvr32 wineasio.dll
-; install gr5 from fuseiso
+; 'install gr5 from fuseiso'
 wine /home/john/.wineprefix/g2/drive_c/Program\ Files/Native\ Instruments/Guitar\ Rig\ 5/Guitar\ Rig\ 5.exe
-
+wine '/home/john/.wineprefix/g2/drive_c/Program Files (x86)/Image-Line/FL Studio 120/FL.exe'
 xboxdrv for dark souls wine
 sudo xboxdrv --detach-kernel-driver --buttonmap 1=3,3=1,2=4,4=2,rt=start,lt=back,start=rt,back=lt --ui-buttonmap guide=KEY_LEFTSHIFT+KEY_TAB,rt=KEY_END,lt=KEY_G
 
 grep -Eo '(http|https)://[^"]+' * | sed -r 's/^[^:]+//' | sed -r 's/^[^h]+//' > 1
 saiti
+
+crusader kings 2 / ck2 dlya zapuska
+lib32-libldap
 
 nvidiattyblackscreen
 /etc/default/grub
