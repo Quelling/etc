@@ -1,3 +1,5 @@
+V odnoi iz obnov slomali xft:Terminus - kak reshenie zamena na xft:xos4 Terminus
+
 usermod -a -G audio theusername
 sudo addgroup <username> audio	;odno i to zhe chto i pervoe, vrode kak
 export WINEPREFIX=~/.wineprefix/g2

@@ -30,8 +30,8 @@ Xft.hintstyle:  hintfull
 !URxvt.perl-ext-common: tabbed
 
 ! -- Fonts -- !
-URxvt.font:xft:Terminus:pixelsize=14:antialias=true
-URxvt.boldfont:xft:Terminus:style=Bold:pixesize=14
+URxvt.font:xft:xos4 Terminus:pixelsize=14:antialias=true
+URxvt.boldfont:xft:xos4 Terminus:style=Bold:pixesize=14
 URxvt*iso14755: False
 URxvt.letterSpace: 0
 
