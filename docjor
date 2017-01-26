@@ -50,7 +50,7 @@ set s off -dpms
 vremâ sinhronizaciâ
 sudo systemctl enable ntp
 
-//kdžek sitièl' i pavukontrol terminal'nu
+kdžek sitièl' i pavukontrol terminal'nu
 njconnect 
 pulsemixer-git
 

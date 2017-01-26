@@ -4,9 +4,9 @@ xrdb -merge .Xresources
 setxkbmap -layout 'us,ru' -option 'grp:ctrl_shift_toggle'
 xset m 0 0
 xmodmap xmodmapP
-xset s off
+xinput set-prop 11 289 0 1
 set s off -dpms
 firefox &
-pavucontrol &
+pavucontrol&
 urxvt -e toxic &
 urxvt -e finch &
