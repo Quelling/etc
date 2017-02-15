@@ -1,3 +1,6 @@
+yaourt --m-arg "--skippgpcheck" -S
+ignor checsummi
+
 V odnoi iz obnov slomali xft:Terminus - kak reshenie zamena na xft:xos4 Terminus
 
 usermod -a -G audio theusername

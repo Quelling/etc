@@ -62,29 +62,3 @@ URxvt.color14 : #55FFFF
 ! yellow, white
 URxvt.color7  : #fffbae
 URxvt.color15 : #FFFFFF
-
-*color0  : #000000
-*color8  : #e1d8e0
-! red high, red dark
-*color1  : #ff6b6b
-*color9  : #cf6767
-! (green, gReen) whiteX2
-*color2  : #e1d8e0
-*color10 : #e1d8e0
-! dark orangeYELLOW? yellow
-*color3  : #aa5500
-*color11 : #FFFF55
-! (green) teal  white
-*color4  : #11a889
-*color12 : #e1d8e0 
-! magenta dark, light
-*color5  : #ff9bff
-*color13 : #ffbeff
-! cyan dark, light
-*color6  : #00AAAA
-*color14 : #55FFFF
-! yellow, white
-*color7  : #fffbae
-*color15 : #FFFFFF
-
-
