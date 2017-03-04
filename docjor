@@ -1,3 +1,7 @@
+git add
+git commit -m ''
+git push
+
 yaourt --m-arg "--skippgpcheck" -S
 ignor checsummi
 

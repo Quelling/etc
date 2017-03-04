@@ -4,6 +4,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 bindkey -e # emacs keys
+bindkey '\ef' emacs-forward-word
+bindkey '\eb' emacs-backward-word
 
 autoload -U colors && colors
 autoload compinit && compinit
@@ -18,12 +20,12 @@ PS2='[\u@\h \W]\$ ' # second line
 
 #aliyasi dlya prilozheniy
 
-alias Syu='yaourt -Syu --aur --noconfirm' 
+alias Syu='yaourt -Syu --aur --ignore bitwig-studio --noconfirm' 
 
 alias ls='ls --color=auto'
 alias aFlh='ls -aFlh'
 
-alias ZSHRC='vim ~/.zshrc'
+alias ZSHRC='emacs -nw ~/.zshrc'
 alias shutdown='shutdown now'
 
 alias RT='cd ~/rtorrent'
