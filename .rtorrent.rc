@@ -1,9 +1,11 @@
-directory = ~/rtorrent 
-# Директория куда будут скачиваться Ваши файлы (пробелы экранируются символом «\», символ «~» в начале пути интерпретируется как путь к домашней папке)
+directory = ~/rtorrent
+
 session = ~/session/
-# Эта директория, в которую будут размещаться открытые закачки. Можете оставить это поле пустым,
+
+dht = auto
 dht.mode.set = on
 dht_port = 6881
+peer_exchange = yes
 port_range = 50000-50000
 port_random = no
 protocol.pex.set = yes

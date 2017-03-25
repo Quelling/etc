@@ -1,3 +1,8 @@
+http://archlinux.org.ru/forum/topic/16977/?page=2
+xinput list
+xinput list-props 11 | grep 'Accel Profile Enabled'
+xinput set-prop 11 289 0 1
+
 git add
 git commit -m ''
 git push
@@ -63,7 +68,7 @@ pulsemixer-git
 
 lm_sensors nužno zapuskat' dlâ otobroženiâ datčikov
 
-toxic prozračnost' v konfige ~/.config/tox/toxic.conf
+toxi[M 1"c prozračnost' v konfige ~/.config/tox/toxic.conf
 ui = {
   5   // true to enable timestamps, false to disable
   6   timestamps=true;
