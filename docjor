@@ -68,7 +68,7 @@ pulsemixer-git
 
 lm_sensors nužno zapuskat' dlâ otobroženiâ datčikov
 
-toxi[M 1"c prozračnost' v konfige ~/.config/tox/toxic.conf
+toxic v konfige ~/.config/tox/toxic.conf
 ui = {
   5   // true to enable timestamps, false to disable
   6   timestamps=true;
