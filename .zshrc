@@ -20,12 +20,12 @@ prompt newfade yellow
 
 #aliyasi dlya prilozheniy
 
-alias Syu='yaourt -Syu --aur --ignore bitwig-studio --noconfirm' 
+alias Syu='yaourt -Syu --aur --ignore bitwig-studio firefox --noconfirm' 
 
 alias ls='ls --color=auto'
 alias aFlh='ls -aFlh'
 alias DU='du -sh ./.* ./*'
-
+alias rcp='rsync -aPWh'
 alias ZSHRC='emacs -nw ~/.zshrc'
 
 alias RT='cd ~/rtorrent'
@@ -41,6 +41,7 @@ alias FL='env WINEPREFIX=/home/john/.wineprefix/g2 wine ~/.wineprefix/g2/drive_c
 alias enw='emacs -nw'
 alias gyazo='gyazo | xclip -selection clipboard'
 alias HAMACHI='systemctl start logmein-hamachi.service'
+alias rtorrent='http_proxy="px1.blockme.site:23128" rtorrent'
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias shutdown='shutdown now'
