@@ -1,4 +1,11 @@
-http://archlinux.org.ru/forum/topic/16977/?page=2
+gpicview
+
+ntfs-3g dlya dualbuta
+
+http://archlinux.org.ru/forum/topic/16977/?page=2 xinput
+
+youtube-dl --extract-audio --audio-format mp3 --output "%(title)s.%(ext)s" " "
+
 xinput list
 xinput list-props 11 | grep 'Accel Profile Enabled'
 xinput set-prop 11 289 0 1

@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=9999999999999999999999999999999999
+SAVEHIST=$HISTSIZE
 
 bindkey -e # emacs keys
 bindkey '\ef' emacs-forward-word
@@ -20,7 +20,7 @@ prompt newfade yellow
 
 #aliyasi dlya prilozheniy
 
-alias Syu='yaourt -Syu --aur --ignore bitwig-studio firefox --noconfirm' 
+alias Syu='yaourt -Syu --aur --ignore bitwig-studio --ignore ppsspp-git --noconfirm' 
 
 alias ls='ls --color=auto'
 alias aFlh='ls -aFlh'
@@ -35,13 +35,13 @@ alias STEAMWINE='env WINEPREFIX=/home/john/.wineprefix/steam/ wine ~/.wineprefix
 alias STEAMWINEKILL='env WINEPREFIX=/home/john/.wineprefix/steam/ wineserver --k'
 alias STEAMWINE32='env WINEPREFIX=/home/john/.wineprefix/steam32etot/ wine ~/.wineprefix/steam32etot/drive_c/Program\ Files/Steam/Steam.exe'
 alias STEAMWINE32KILL='env WINEPREFIX=/home/john/.wineprefix/steam32etot/ wineserver --k'
-
 alias GR='env WINEPREFIX=/home/john/.wineprefix/g2 wine ~/.wineprefix/g2/drive_c/Program\ Files/Native\ Instruments/Guitar\ Rig\ 5/Guitar\ Rig\ 5.exe'
-alias FL='env WINEPREFIX=/home/john/.wineprefix/g2 wine ~/.wineprefix/g2/drive_c/Program\ Files\ \(x86\)/Image-Line/FL\ Studio\ 120/FL.exe'
+alias TUNER='cd .wine/drive_c/Program\ Files\ \(x86\)/AP\ Tuner/AP\ Tuner\ 3.08 && wine tuner.exe'
+alias STEAMENG='export LANG=en_US.UTF-8 && steam'
 alias enw='emacs -nw'
 alias gyazo='gyazo | xclip -selection clipboard'
 alias HAMACHI='systemctl start logmein-hamachi.service'
-alias rtorrent='http_proxy="px1.blockme.site:23128" rtorrent'
+alias Prtorrent='http_proxy="px1.blockme.site:23128" rtorrent'
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias shutdown='shutdown now'
