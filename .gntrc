@@ -1,0 +1,23 @@
+[Finch]
+mouse = 1
+color-available = green; default
+color-away = gray; default
+color-idle = cyan; default
+color-offline = red; default
+color-message-sent = cyan; default
+color-message-received = green; default
+color-message-highlight = red; default
+color-message-action = cyan; default
+color-timestamp = black; default
+color-status = black; default
+
+[colors]
+# The RGB values range in [0, 1000]
+black = 0; 0; 0
+red = 1000; 0; 0
+green = 0; 1000; 0
+blue = 250; 250; 700
+white = 1000; 1000; 1000
+gray = 700; 700; 700
+darkgray = 256; 256; 256
+cyan = 0; 255; 255

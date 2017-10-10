@@ -1,3 +1,11 @@
+ffmpeg -i treka.wav -vn -ar 48000 -ac 2 -ab 320K -f mp3 nw.mp3
+
+id3 -1 --artist "J. A. Caesar"
+id3 --title %f *
+
+
+|sed 's/который/который\n/g'|grep -c который
+
 gpicview
 
 ntfs-3g dlya dualbuta
@@ -33,7 +41,7 @@ sudo xboxdrv --detach-kernel-driver --buttonmap 1=3,3=1,2=4,4=2,rt=start,lt=back
 grep -Eo '(http|https)://[^"]+' * | sed -r 's/^[^:]+//' | sed -r 's/^[^h]+//' > 1
 saiti
 
-crusader kings 2 / ck2 dlya zapuska
+crusader kings 2 / ck2 dlya zapuska // eu4
 lib32-libldap
 
 nvidiattyblackscreen
